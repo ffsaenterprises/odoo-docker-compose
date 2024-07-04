@@ -5,8 +5,7 @@ services:
     build:
       context: .
       dockerfile: ./odoo/resources/Dockerfile
-    container_name: odoo_${PROJECT}
-    image: ${PROJECT}:${ODOO_VERSION}
+    container_name: odoo
     restart: always
     ports:
       - "${PORT}:8069"
